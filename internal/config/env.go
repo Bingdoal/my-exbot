@@ -11,13 +11,7 @@ import (
 const envType = "yaml"
 const envPrefix = "exbot"
 
-var Env *viper.Viper
-
-func InitConfig(path string) {
-	Env = initViper(path)
-}
-
-func initViper(path string) *viper.Viper {
+func NewViper(path string) *viper.Viper {
 	v := viper.New()
 
 	loadConfig(v, path, "env")
