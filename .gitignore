@@ -1,0 +1,6 @@
+env.prod.yaml
+*.exe
+*.zip
+*.7z
+.vscode/
+build/
